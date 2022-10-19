@@ -15,5 +15,12 @@ communication between the faculty and the graduates.*
 - ***News:*** Updates on alumni and campus news, and emergency bulletins.
 - ***Networking:*** alumni networking features, including ways to find out information about a classmate or other alum.
 - ***Giving Back:*** A way to donate to the school and become engaged in a meaningful way.
+- ***Job Interests:*** A section dedicated to finding job vacancies and oppurtunities.
 
 ![This is a Pie-chart](meta-chart01.jpeg)
+
+***Users and Permissions:***
+- ***Students/Alumni:*** Have control over their respective personal details and can connect with alumni.
+- ***Faculties:*** Have their own accounts and are linked with their batch students and also can act as super user to students.
+- ***Admin:*** Verifies and maintains the details of students and alumni. Add info regarding the events.
+
