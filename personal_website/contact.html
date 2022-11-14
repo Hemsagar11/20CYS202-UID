@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Contact Me!</title>
+        <link rel="icon" href="images/logo_icon.png">
+        <style>
+            body{
+                margin:0;
+                background-image: url("images/contact.png");
+                background-attachment: fixed;
+                background-size: cover;
+                background-repeat: no-repeat;
+                
+            }
+            nav{
+                position:fixed;
+                width:100%;
+                padding-bottom: 10%;
+                margin-top: 1%;
+            }
+            ul {
+                list-style-type: none;
+                margin: 0;
+                padding: 6;
+                overflow: hidden;
+                background-color: transparent;
+            }
+            li {
+                float: right;
+                
+               }
+
+            li a {
+                display: block;
+                color: white;
+                text-align: center;
+                font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+                font-size: large;
+                padding: 10px 15px;
+                text-decoration: none;
+                margin-right: 10px;
+                
+            }
+
+            li a:hover {
+                color: black;
+                background-color: rgb(221, 214, 214);
+
+            }
+            img {
+                width: 48px;
+                height: 48px;
+                opacity:1;
+                
+            }
+        </style>
+    </head>
+
+    <body>
+        <nav>
+            <ul>
+                <li style="font-family:'Trebuchet MS';font-size:large;float: left;color: white;padding-left: 15px;">
+                    <a href="index.html">Home</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="blog.html">Writing</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="aboutme.html">About Me</a></li>
+            </ul>
+        </nav>
+        <div style="float:right;margin-top: 7%;;margin-right:30%">
+        <div style="text-align: left;font-size:145%;color: aliceblue;font-family:Monaco;">
+            <h1>Let's Talk.</h1>
+                <form style="font-size: 75%;">
+                    <fieldset style="width:125%">
+                    <legend style="font-size: 80%;">Details</legend>
+                    <label for="fname">Name:</label><br>
+                    <input type="text" id="name" name="name" style="width:100%;"placeholder="Enter your Name.">
+                    <br><br>
+                    <label for="lname">Email:</label><br>
+                    <input type="text" id="mail" name="mail" style="width:100%;" placeholder="Enter your email.">
+                    <br><br>
+                    <label for="Message">Message:</label><br>
+                    <textarea name="message" rows="15" cols="45" style="width:100%" placeholder="Enter your message."></textarea>
+                    </fieldset>
+                    <br>
+                    <input type="Submit" name="Submit" value="Submit" style="width: 25%">
+                </form>
+                <div>
+                <pre>
+               <a href="https://www.linkedin.com/in/hem-sagar-a6b706227" target="_blank" ><img src="images/linkedin.png" alt="Linkedin"></a>    <a href="https://www.instagram.com/hemsagar_._11/" target="_blank"><img src="images/insta.png" alt="Insta"></a>    <a href="https://github.com/Hemsagar11" target="_blank"><img src="images/github.png" alt="Github"></a>    <a href="mailto:hsrreddy11@gmail.com" target="_blank"><img src="images/mail.png" alt="Mail"></a>
+                </pre>
+                </div>
+            </div>
+        </div>
+       
+    </body>
+</html>
