@@ -1,3 +1,10 @@
+/*
+Author: Hem Sagar
+Countdown credits: stackoverflow, Google search results
+created date: 28-DEC-2022
+modified date: 5-JAN-2023
+*/
+
 const countdown = () => {
     const countDate = new Date("Feb 22, 2023 00:00:00").getTime();
     const now = new Date().getTime();
