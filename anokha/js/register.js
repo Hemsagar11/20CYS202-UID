@@ -1,3 +1,11 @@
+/*
+Author: Hem Sagar
+Javascript reference: fontawesome.com(password visibility), w3schools(validation)
+Javascript Author: Hem Sagar
+created date: 24-DEC-2022
+modified date: 5-JAN-2023
+*/
+
 function see() {
   let passwd = document.getElementById("pwd");
   let icon = document.getElementById("icon");
