@@ -423,7 +423,8 @@ header .social-icon li a
 	}
 #contact input[type="submit"]:hover
 	{
-		background: transparent;
+		background: #f0efde;
+		color: #010101;
 	}
 #contact address
 	{
