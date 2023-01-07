@@ -3,7 +3,7 @@ Author: Hem Sagar
 Javascript reference: fontawesome.com(password visibility), w3schools(validation)
 Javascript Author: Hem Sagar
 created date: 24-DEC-2022
-modified date: 5-JAN-2023
+modified date: 6-JAN-2023
 */
 
 function see() {
@@ -46,7 +46,7 @@ function validate1() {
   let confirmPasswd = document.getElementById("crfmpwd");
   var validName = /^[a-zA-Z0-9\-\s]+$/;
   var validEmail = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
-  var validPwd = /^[A-Za-z0-9@#_]\w{7,14}$/;
+  var validPwd = /^[A-Za-z0-9@#_]+\w{7,14}$/;
   if (uname.value.match(validName)) {
     if (email.value.match(validEmail)) {
       if (passwd.value.match(validPwd) && passwd.value.length > 8) {
