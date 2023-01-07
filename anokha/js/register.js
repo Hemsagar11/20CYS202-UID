@@ -46,7 +46,7 @@ function validate1() {
   let confirmPasswd = document.getElementById("crfmpwd");
   var validName = /^[a-zA-Z0-9\-\s]+$/;
   var validEmail = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
-  var validPwd = /^[A-Za-z]\w{7,14}$/;
+  var validPwd = /^[A-Za-z0-9@#_]\w{7,14}$/;
   if (uname.value.match(validName)) {
     if (email.value.match(validEmail)) {
       if (passwd.value.match(validPwd) && passwd.value.length > 8) {
