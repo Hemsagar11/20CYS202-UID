@@ -1,0 +1,91 @@
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <title>Alumni Portal Sign In</title>
+    <style>
+        input[type=button],
+        input[type=submit],
+        input[type=reset] {
+            background-color: #c3c0c0;
+            border: none;
+            color: rgb(5, 5, 5);
+            padding: 14px 40px;
+            text-decoration: none;
+            margin: 4px 2px;
+            cursor: pointer;
+        }
+
+        input[type="submit"] {
+            font-weight: bold;
+            -webkit-transition: all 0.4s ease-in-out;
+            transition: all 0.4s ease-in-out;
+        }
+
+        input[type="submit"]:hover {
+            background: #f0efde;
+            color: #287761;
+        }
+
+        .para {
+            background-color: #5c4a39;
+            color: rgb(255, 255, 255);
+            margin-left: 30%;
+            margin-right: 30%;
+            border-radius: 20px;
+            box-shadow: 4px 4px 4px 4px #00000071;
+        }
+    </style>
+</head>
+
+<body style="background-color: #f0efde; color:aliceblue; font-size:large;">
+    <br><br><br><br><br>
+    <div class="para">
+        <br>
+        <div style="text-align:center; font-size:40px;"> Alumni Sign In</div><br>
+        <div style="text-align: left;margin-left:25%;">
+            <form onsubmit="return validateForm()">
+                <label for="email"> Univ Email : </label>
+                <input type="email" id="email" name="email"><br><br>
+                <label for="password"> Password : </label>
+                <input type="password" id="password" name="password"><br><br>
+                <input type="submit" value="Sign In">
+                <br><br>
+            </form>
+        </div>
+    </div>
+</body>
+
+<script>
+    function validateForm() {
+        var email = document.getElementById("email").value;
+        var password = document.getElementById("password").value;
+
+        if (email == "") {
+            alert("Email field must be filled out");
+            return false;
+        }
+        var emailRegex = /^cb\.en\.(u4|p2)cys[0-9]+@cb\.students\.amrita\.edu$/;;
+        if (!emailRegex.test(email)) {
+            alert("Please enter a valid university email");
+            return false;
+        }
+
+        if (password.length < 8) {
+            alert("Password must be at least 8 characters long");
+            return false;
+        }
+
+        var specialCharacterRegex = /[^A-Za-z0-9]/;
+        if (!specialCharacterRegex.test(password)) {
+            alert("Password must contain at least one special character");
+            return false;
+        }
+
+        alert("Logged in successfully!");
+        return true;
+    }
+</script>
+
+</html>

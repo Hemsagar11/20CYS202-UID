@@ -1,0 +1,92 @@
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="css/font-awesome.min.css">
+  <title>Cyber Alumni Portal Sign Up</title>
+  <style>
+    input[type=button],
+    input[type=submit],
+    input[type=reset] {
+      background-color: #c3c0c0;
+      border: none;
+      color: rgb(5, 5, 5);
+      padding: 11px 22px;
+      text-decoration: none;
+      margin: 4px 2px;
+      cursor: pointer;
+    }
+
+    input[type="submit"] {
+      font-weight: bold;
+      -webkit-transition: all 0.4s ease-in-out;
+      transition: all 0.4s ease-in-out;
+    }
+
+    input[type="submit"]:hover {
+      background: #f0efde;
+      color: #287761;
+    }
+    input[type="reset"] {
+      font-weight: bold;
+      -webkit-transition: all 0.4s ease-in-out;
+      transition: all 0.4s ease-in-out;
+    }
+
+    input[type="reset"]:hover {
+      background: #f0efde;
+      color: #287761;
+    }
+
+    .para {
+      background-color: #5c4a39;
+      color: rgb(255, 255, 255);
+      margin-left: 30%;
+      margin-right: 30%;
+      border-radius: 20px;
+      box-shadow: 4px 4px 4px 4px #00000071;
+    }
+  </style>
+</head>
+
+<body style="background-color: #f0efde; color:aliceblue; font-size:large;">
+  <br><br><br><br><br>
+  <div class="para">
+    <br>
+    <div style="text-align:center; font-size:40px;">Sign Up</div><br>
+    <div style="text-align: left;margin-left:25%;">
+      <form onsubmit="return validateForm()" action="submit.php">
+        <label for="photo">Photo:</label><br>
+        <input type="file" id="photo" name="photo"><br><br>
+        <label for="name">Name:</label><br>
+        <input type="text" id="name" name="name"><br><br>
+        <label for="roll_number">Roll Number:</label><br>
+        <input type="text" id="roll_number" name="roll_number"><br><br>
+        <label for="dob">Date of Birth:</label><br>
+        <input type="date" id="dob" name="dob"><br><br>
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email"><br><br>
+        <label for="mobile_number">Mobile Number:</label><br>
+        <input type="text" id="mobile_number" name="mobile_number"><br><br>
+        <label for="password">Password:</label><br>
+        <input type="password" id="password" name="password"><br><br>
+        <label for="confirm_password">Confirm Password:</label><br>
+        <input type="password" id="confirm_password" name="confirm_password"><br><br>
+        <label for="address">Address:</label><br>
+        <textarea id="address" name="address"></textarea><br><br>
+        <label for="graduating_year">Graduating Year:</label><br>
+        <input type="number" id="graduating_year" name="graduating_year"><br><br>
+        <label for="workspace_name">Workspace Name:</label><br>
+        <input type="text" id="workspace_name" name="workspace_name"><br><br>
+        <label for="workspace_city">Workspace City:</label><br>
+        <input type="text" id="workspace_city" name="workspace_city"><br><br>
+        <input type="submit" value="Submit">
+        <input type="reset" value="Reset">
+        <br><br>
+      </form>
+    </div>
+
+  </div>
+</body>
+
+</html>
