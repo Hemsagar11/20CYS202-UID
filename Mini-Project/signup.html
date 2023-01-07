@@ -88,6 +88,157 @@
     </div>
 
   </div>
+  <script>
+      function validateForm() {
+        var name = document.getElementById("name");
+        var rollNumber = document.getElementById("roll_number");
+        var dob = document.getElementById("dob");
+        var email = document.getElementById("email");
+        var mobileNumber = document.getElementById("mobile_number");
+        var password = document.getElementById("password");
+        var confirmPassword = document.getElementById("confirm_password");
+        var address = document.getElementById("address");
+        var graduatingYear = document.getElementById("graduating_year");
+        var workspaceName = document.getElementById("workspace_name");
+        var workspaceCity = document.getElementById("workspace_city");
+
+        if (name.value == "") {
+          alert("Name is required!");
+          //name.focus();
+          return false;
+        }
+        else {
+          var nameRegex = /^[a-zA-Z ]+$/;
+          if (!nameRegex.test(name.value)) {
+            alert("Name can only contain alphabetical characters and spaces!");
+            //name.focus();
+            return false;
+          }
+
+          if (name.value.length < 5 || name.value.length > 30) {
+            alert("Name must be between 5 and 30 characters long!");
+            //name.focus();
+            return false;
+          }
+        }
+
+        if (rollNumber.value == "") {
+          alert("Roll number is required!");
+          rollNumber.focus();
+          return false;
+        } else {
+          var rollNumberRegex = /^cb\.en\.(u4cys[0-9]+|p2cys[0-9]+)$/i;
+          if (!rollNumberRegex.test(rollNumber.value)) {
+            alert("Invalid roll number format!");
+            //rollNumber.focus();
+            return false;
+          }
+        }
+
+        if (dob.value == "") {
+          alert("Date of birth is required!");
+          //dob.focus();
+          return false;
+        }
+
+        if (email.value == "") {
+          alert("Email is required!");
+          //email.focus();
+          return false;
+        } else {
+          var emailRegex = /^cb\.en\.(u4cys[0-9]+|p2cys[0-9]+)@cb\.students\.amrita\.edu$/i;
+          if (!emailRegex.test(email.value)) {
+            alert("Invalid email format!");
+            //email.focus();
+            return false;
+          }
+        }
+
+        if (mobileNumber.value == "") {
+          alert("Mobile number is required!");
+          //mobileNumber.focus();
+          return false;
+        } else {
+          if (mobileNumber.value.length != 10) {
+            alert("Mobile number must be 10 digits long!");
+            //mobileNumber.focus();
+            return false;
+          }
+        }
+
+        if (password.value == "") {
+          alert("Password is required!");
+          //password.focus();
+          return false;
+        } else {
+          var passwordRegex = /\d/;
+          if (!passwordRegex.test(password.value)) {
+            alert("Password must contain at least one number!");
+            //password.focus();
+            return false;
+          }
+        }
+
+        if (confirmPassword.value == "") {
+          alert("Confirm password is required!");
+          //confirmPassword.focus();
+          return false;
+        }
+
+        if (password.value != confirmPassword.value) {
+          alert("Passwords do not match!");
+          //password.focus();
+          return false;
+        }
+
+        if (address.value == "") {
+          alert("Address is required!");
+          //address.focus();
+          return false;
+        }
+
+        if (graduatingYear.value == "") {
+          alert("Graduating year is required!");
+          //graduatingYear.focus();
+          return false;
+        } else {
+          if (graduatingYear.value.length != 4) {
+            alert("Graduating year must be a valid year!");
+            //graduatingYear.focus();
+            return false;
+          }
+        }
+
+        if (workspaceName.value == "") {
+          alert("Workspace name is required!");
+          //workspaceName.focus();
+          return false;
+        } else {
+          if (workspaceName.value.length < 4) {
+            alert("Workspace name must be valid name!");
+            //workspaceName.focus();
+            return false;
+          }
+        }
+
+        if (workspaceCity.value == "") {
+          alert("Workspace city is required!");
+          //workspaceCity.focus();
+          return false;
+        } else {
+          if (workspaceCity.value.length < 4) {
+            alert("Workspace city must be valid city!");
+            //workspaceCity.focus();
+            return false;
+          }
+        }
+
+        alert("Registered Successfully!");
+        return true;
+      }
+
+
+    </script>
 </body>
 
 </html>
