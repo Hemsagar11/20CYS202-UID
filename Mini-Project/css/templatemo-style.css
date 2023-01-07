@@ -308,11 +308,6 @@ header .social-icon li a
 		-webkit-transition: all 0.4s ease-in-out;
 		        transition: all 0.4s ease-in-out;
 	}
-#service .col-md-4:hover
-	{
-		background: #6e5b49;
-		color: #f0efde;
-	}
 #service .active
 	{
 		background: #6e5b49;
