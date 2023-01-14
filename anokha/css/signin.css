@@ -132,3 +132,15 @@ h4{
     color:#fff;
     background: linear-gradient(to right,rgb(63, 3, 159),rgb(165, 6, 204));
 }
+.footer {
+    position:relative;
+    background-color: #01204c;
+    padding: 5px 0;
+    font-family: "Roboto", sans-serif;
+}
+
+.footer p {
+    color: #fff;
+    margin: 0;
+    text-align: center;
+}
