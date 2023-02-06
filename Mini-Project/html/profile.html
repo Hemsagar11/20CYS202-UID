@@ -36,7 +36,7 @@
 				<div class="user-avatar">
 					<img src="../images/ramaguru_profile.png" alt="Maxwell Admin">
 				</div>
-				<h5 class="user-name">R Ramaguru Radhakrishnan</h5>
+				<h5 class="user-name">Ramaguru Radhakrishnan</h5>
 				<h6 class="user-email">r_ramaguru@cb.amrita.edu</h6><br>
                 <div class="social">
                     <a href="https://www.linkedin.com/in/ramaguru-radhakrishnan"><img src="https://img.icons8.com/ios-filled/50/null/linkedin.png"/></a>
@@ -125,7 +125,7 @@
 		<div class="row gutters">
 			<div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
 				<div class="text-right">
-					<button type="reset" id="submit" name="submit" class="btn btn-secondary" >Cancel</button>
+					<button type="reset" id="submit" name="submit" class="btn btn-secondary" onclick="f1()">Cancel</button>
 					<button type="button" id="submit" name="submit" class="btn btn-primary" onclick="func()">Update</button>
 				</div>
 			</div>
@@ -136,6 +136,9 @@
 </div>
 </div>
 <script>
+	function f1(){
+		window.location.href = "home.html";
+	}
     function func(){
         window.alert("Profile Updated.");
 		
